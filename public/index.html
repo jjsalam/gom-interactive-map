@@ -1,0 +1,24 @@
+cat <<'EOF' > index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Gulf of Mannar Interactive Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="map"></div>
+  <div id="controls">
+    <button id="voice-btn">🎙️ Voice</button>
+    <select id="lang-select"><option value="en">English</option><option value="ta">தமிழ்</option></select>
+    <input type="text" id="search" placeholder="Search…">
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="gom-map.js"></script>
+  <script src="voice-assistant.js"></script>
+</body>
+</html>
+EOF

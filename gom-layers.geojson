@@ -1,0 +1,8 @@
+cat <<'EOF' > gom-layers.geojson
+{
+  "type":"FeatureCollection",
+  "features":[
+    {"type":"Feature","geometry":{"type":"Point","coordinates":[78.0,10.4]},"properties":{"name":"Sample Point"}}
+  ]
+}
+EOF
